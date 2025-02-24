@@ -8,14 +8,59 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c4e937c9d9.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-slate-800 min-h-screen">
-    <header class="max-w-md mx-auto bg-gray-50 h-screen px-6">
-        <nav>
-            <h1>Bangladesh</h1>
+<body class="bg-slate-800">
+    <header class="max-w-md mx-auto bg-gray-50 px-6">
+        <nav class="flex items-center justify-between pt-4">
+            <div class="flex items-center gap-3">
+                <div><img class="w-12" src="./media/logo.png" alt=""></div>
+                <div>
+                    <h1 class="text-2xl font-bold">$ <span id="main-balance">4500</span></h1>
+                    <p class="text-gray-400 text-[14px]">Available Balance</p>
+                </div>
+            </div>
+            <div>
+                <button class="rounded-xl px-3 py-2 bg-gray-200 text-[14px] font-semibold">
+                    <i class="rotate-180 mr-2 fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
         </nav>
     </header>
+    <section class="max-w-md mx-auto bg-gray-50 px-8 pt-10">
+        <h1 class="text-3xl font-bold mb-4">🔥 Welcome to Payooo!</h1>
+        <p class="text-gray-600">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+    </section>
+    <!-- Category Section -->
+    <section class="max-w-md mx-auto bg-gray-50 px-8 pt-10 grid grid-cols-3 gap-3 pb-9">
+        <div class="flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <img src="./media/wallet.png" alt="" class="w-4/12 mx-auto">
+            <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Add Money</h3>
+        </div>
+        <div class="flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <img src="./media/send.png" alt="" class="w-4/12 mx-auto">
+            <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Cashout</h3>
+        </div>
+        <div class="flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <img src="./media/money.png" alt="" class="w-4/12 mx-auto">
+            <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Transfer Money</h3>
+        </div>
+        <div class="flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <img src="./media/bonus.png" alt="" class="w-4/12 mx-auto">
+            <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Get Bonus</h3>
+        </div>
+        <div class="flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <img src="./media/purse.png" alt="" class="w-4/12 mx-auto">
+            <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Pay Bill</h3>
+        </div>
+        <div class="flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <img src="./media/transaction.png" alt="" class="w-4/12 mx-auto">
+            <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Transactions</h3>
+        </div>       
+    </section>
+    <!-- Add Money Section -->
     <script src="./scripts/login.js"></script>
 </body>
 

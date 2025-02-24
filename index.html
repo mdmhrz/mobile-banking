@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-800 min-h-screen">
+    <header class="max-w-md mx-auto bg-gray-50 h-screen px-6">
+        <div class="flex flex-col items-center justify-center h-screen" >
+            <nav class="flex items-center justify-center relative">
+                <img src="./media/logo-bg.png" alt="">
+                <img class=" absolute top-10" src="./media/logo.png" alt="">
+            </nav>
+            <form action="" class="w-full -mt-6">
+                <div class="card bg-base-100 w-full shadow-2xl">
+                    <div class="card-body mx-auto w-full">
+                        <fieldset class="fieldset ">
+                            <label class="fieldset-label">Email</label>
+                            <input type="email" class="input w-full focus:outline-none" placeholder="Email" />
+                            <label class="fieldset-label">Password</label>
+                            <input type="password" class="input w-full focus:outline-none " placeholder="Password" />
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button class="btn bg-sky-600 text-white mt-4">Login</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+
+</body>
+
+</html>

@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mobile Banking</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
 </head>
 
 <body class="bg-slate-800 min-h-screen">
@@ -20,19 +21,19 @@
                 <div class="card bg-base-100 w-full shadow-2xl">
                     <div class="card-body mx-auto w-full">
                         <fieldset class="fieldset ">
-                            <label class="fieldset-label">Email</label>
-                            <input type="email" class="input w-full focus:outline-none" placeholder="Email" />
+                            <label class="fieldset-label">Account Number</label>
+                            <input id="mobile-number" type="number" value="01558833814" class="input w-full focus:outline-none" placeholder="Enter your mobile number" />
                             <label class="fieldset-label">Password</label>
-                            <input type="password" class="input w-full focus:outline-none " placeholder="Password" />
+                            <input id="pin" type="number" value="1234" class="input w-full focus:outline-none " placeholder="Enter your PIN" />
                             <div><a class="link link-hover">Forgot password?</a></div>
-                            <button class="btn bg-sky-600 text-white mt-4">Login</button>
+                            <button id="login-btn" class="btn bg-sky-600 text-white mt-4">Login</button>
                         </fieldset>
                     </div>
                 </div>
             </form>
         </div>
     </header>
-
+    <script src="./scripts/login.js"></script>
 </body>
 
 </html>

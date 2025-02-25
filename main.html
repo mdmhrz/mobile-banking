@@ -71,78 +71,13 @@
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Transactions</h3>
             </div>
         </section>
-        <!-- Transactions -->
-        <section id="transaction" class="mt-8 px-8">
-            <div class="flex justify-between items-center">
-                <h2 class="text-[16px] font-bold">Transactions</h2>
-                <span class="text-[12px]">View All</span>
-            </div>
-            <!-- History -->
-            <div class="grid grid-cols-1 gap-1">
-                <div
-                class="flex items-center justify-between px-4 py-3 bg-white mt-3 rounded-md border border-gray-300 shadow-md">
 
-                <div class="flex gap-3 items-center">
-                    <div class="bg-gray-200 p-2 rounded-full">
-                        <img src="./media/wallet.png" alt="">
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-[14px]">Electricity Bill</h4>
-                        <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
-                    </div>
-                </div>
-                <i class="fas fa-ellipsis-v text-gray-400"></i>
-            </div>
-            <div
-                class="flex items-center justify-between px-4 py-3 bg-white mt-3 rounded-md border border-gray-300 shadow-md">
-
-                <div class="flex gap-3 items-center">
-                    <div class="bg-gray-200 p-2 rounded-full">
-                        <img src="./media/wallet.png" alt="">
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-[14px]">Electricity Bill</h4>
-                        <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
-                    </div>
-                </div>
-                <i class="fas fa-ellipsis-v text-gray-400"></i>
-            </div>
-            <div
-                class="flex items-center justify-between px-4 py-3 bg-white mt-3 rounded-md border border-gray-300 shadow-md">
-
-                <div class="flex gap-3 items-center">
-                    <div class="bg-gray-200 p-2 rounded-full">
-                        <img src="./media/wallet.png" alt="">
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-[14px]">Electricity Bill</h4>
-                        <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
-                    </div>
-                </div>
-                <i class="fas fa-ellipsis-v text-gray-400"></i>
-            </div>
-            <div
-                class="flex items-center justify-between px-4 py-3 bg-white mt-3 rounded-md border border-gray-300 shadow-md">
-
-                <div class="flex gap-3 items-center">
-                    <div class="bg-gray-200 p-2 rounded-full">
-                        <img src="./media/wallet.png" alt="">
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-[14px]">Electricity Bill</h4>
-                        <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
-                    </div>
-                </div>
-                <i class="fas fa-ellipsis-v text-gray-400"></i>
-            </div>
-            </div>
-        </section>
         <!-- Add Money Section -->
         <section id="add-money-section" class="mt-8 px-8 hidden">
             <h2 class="text-[16px] font-bold">Add Money</h2>
             <div class="card-body bg-white mt-3 rounded-[30px]">
                 <legend class="text-[16px] font-semibold text-black">Select a Bank</legend>
-                <select class="select select-ghost input bg-gray-200 rounded-2xl">
+                <select title="selectAnyBank" id="banks-name" class="select select-ghost input bg-gray-200 rounded-2xl">
                     <option disabled selected>Select Bank</option>
                     <option value="Bkash">Bkash</option>
                     <option value="Rocket">Rocket</option>
@@ -150,7 +85,7 @@
                 </select>
                 <fieldset class="fieldset">
                     <label class="fieldset-label text-[15px] font-semibold text-black">Account Number</label>
-                    <input id="mobile-number" type="number" value="01558833814"
+                    <input id="addmoney-mobile-number" type="number" value="01558833814"
                         class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
                         placeholder="Enter your mobile number" />
                     <label class="fieldset-label text-[15px] font-semibold text-black">Amount to Add</label>
@@ -170,7 +105,7 @@
             <div class="card-body bg-white mt-3 rounded-[30px]">
                 <fieldset class="fieldset">
                     <label class="fieldset-label text-[15px] font-semibold text-black">Agent Number</label>
-                    <input id="mobile-number" type="number" value="01558833814"
+                    <input id="cashout-number" type="number" value="01558833814"
                         class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
                         placeholder="Enter your mobile number" />
                     <label class="fieldset-label text-[15px] font-semibold text-black">Amount to Cashout</label>
@@ -186,8 +121,18 @@
             </div>
         </section>
 
-
+        <!-- Transactions -->
+        <section id="transaction" class="mt-8 px-8 hidden">
+            <div class="flex justify-between items-center">
+                <h2 class="text-[16px] font-bold">Transactions</h2>
+                <span class="text-[12px]">View All</span>
+            </div>
+            <!-- History -->
+            <div id="all-history">
+            </div>
+        </section>
     </div>
+    <script src="./scripts/utilities/utilities.js"></script>
     <script src="./scripts/login.js"></script>
     <script src="./scripts/addmoney.js"></script>
     <script src="./scripts/logout.js"></script>

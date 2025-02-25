@@ -12,7 +12,7 @@
 
 <body class="bg-slate-800 min-h-screen">
     <header class="max-w-md mx-auto bg-gray-50 h-screen px-6">
-        <div class="flex flex-col items-center justify-center h-screen" >
+        <div class="flex flex-col items-center justify-center h-screen">
             <nav class="flex items-center justify-center relative">
                 <img src="./media/logo-bg.png" alt="">
                 <img class=" absolute top-10" src="./media/logo.png" alt="">
@@ -22,17 +22,20 @@
                     <div class="card-body mx-auto w-full">
                         <fieldset class="fieldset ">
                             <label class="fieldset-label font-bold text-[14px]">Account Number</label>
-                            <input id="mobile-number" type="number" value="01558833814" class="input w-full focus:outline-none" placeholder="Enter your mobile number" />
+                            <input id="mobile-number" type="number" value="01558833814"
+                                class="input w-full focus:outline-none" placeholder="Enter your mobile number" />
                             <label class="fieldset-label font-bold text-[14px]">4 Digit PIN Number</label>
-                            <input id="pin" type="number" value="1234" class="input w-full focus:outline-none " placeholder="Enter your PIN" />
+                            <input id="pin" type="number" value="1234" class="input w-full focus:outline-none "
+                                placeholder="Enter your PIN" />
                             <div><a class="link link-hover">Forgot PIN?</a></div>
-                            <button id="login-btn" class="btn bg-sky-600 text-white mt-4">Login</button>
+                            <button type="button" id="login-btn" class="btn bg-sky-600 text-white mt-4">Login</button>
                         </fieldset>
                     </div>
                 </div>
             </form>
         </div>
     </header>
+    <script src="./scripts/utilities/utilities.js"></script>
     <script src="./scripts/login.js"></script>
 </body>
 

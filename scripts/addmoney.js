@@ -2,6 +2,7 @@ document.getElementById('add-money-box').addEventListener('click', function () {
     displayStatus('add-money-section', 'block')
     displayStatus('cashout-section', 'none')
     displayStatus('transaction', 'none')
+    displayStatus('transfer-section', 'none')
 
 })
 document.getElementById('addmoney-btn').addEventListener('click', function (event) {

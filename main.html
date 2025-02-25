@@ -50,7 +50,7 @@
                 <img src="./media/send.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Cashout</h3>
             </div>
-            <div
+            <div id="transfer-box"
                 class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
                 <img src="./media/money.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Transfer Money</h3>
@@ -120,6 +120,27 @@
                 </fieldset>
             </div>
         </section>
+        <!-- Transfer Money Section -->
+        <section id="transfer-section" class="mt-8 px-8 hidden">
+            <h2 class="text-[16px] font-bold">Transfer Money</h2>
+            <div class="card-body bg-white mt-3 rounded-[30px]">
+                <fieldset class="fieldset">
+                    <label class="fieldset-label text-[15px] font-semibold text-black">User Account Number</label>
+                    <input id="transfer-number" type="number" value="01558833814"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
+                        placeholder="Enter your mobile number" />
+                    <label class="fieldset-label text-[15px] font-semibold text-black">Amount</label>
+                    <input id="transfer-amount" type="number"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
+                        placeholder="Type your cashout amount" />
+                    <label class="fieldset-label text-[15px] font-semibold text-black">PIN Number</label>
+                    <input id="trasfer-pin" type="number" value="1234"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none " placeholder="Enter your PIN" />
+                    <button id="transfer-btn" class="btn bg-sky-600 text-white text-[1.15rem] rounded-3xl mt-4">Send
+                        Now</button>
+                </fieldset>
+            </div>
+        </section>
 
         <!-- Transactions -->
         <section id="transaction" class="mt-8 px-8 hidden">
@@ -132,6 +153,7 @@
             </div>
         </section>
     </div>
+    <script src="./scripts/transfer-money.js"></script>
     <script src="./scripts/utilities/utilities.js"></script>
     <script src="./scripts/login.js"></script>
     <script src="./scripts/addmoney.js"></script>

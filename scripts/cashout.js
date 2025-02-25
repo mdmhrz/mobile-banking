@@ -1,6 +1,7 @@
 document.getElementById('cashout-box').addEventListener('click', function(){
     document.getElementById('cashout-section').style.display = 'block';
     document.getElementById('add-money-section').style.display = 'none';
+    document.getElementById('transaction').style.display = 'none';
 })
 
 document.getElementById('cashout-btn').addEventListener('click', function(){

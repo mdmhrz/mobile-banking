@@ -23,7 +23,8 @@
                     </div>
                 </div>
                 <div>
-                    <button id="logout" class="rounded-xl px-3 py-2 bg-gray-200 text-[14px] font-semibold cursor-pointer hover:bg-gray-300">
+                    <button id="logout"
+                        class="rounded-xl px-3 py-2 bg-gray-200 text-[14px] font-semibold cursor-pointer hover:bg-gray-300">
                         <i class="rotate-180 mr-2 fa-solid fa-arrow-right-from-bracket"></i>
                         <span>Log Out</span>
                     </button>
@@ -39,29 +40,101 @@
         </section>
         <!-- Category Section -->
         <section class="max-w-md mx-auto bg-gray-100 px-8 pt-10 grid grid-cols-3 gap-3 pb-9 rounded-b-[30px]">
-            <div id="add-money-box" class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <div id="add-money-box"
+                class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
                 <img src="./media/wallet.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Add Money</h3>
             </div>
-            <div id="cashout-box" class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <div id="cashout-box"
+                class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
                 <img src="./media/send.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Cashout</h3>
             </div>
-            <div class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <div
+                class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
                 <img src="./media/money.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Transfer Money</h3>
             </div>
-            <div class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <div
+                class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
                 <img src="./media/bonus.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Get Bonus</h3>
             </div>
-            <div class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <div
+                class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
                 <img src="./media/purse.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Pay Bill</h3>
             </div>
-            <div class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
+            <div id="transaction-box"
+                class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
                 <img src="./media/transaction.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Transactions</h3>
+            </div>
+        </section>
+        <!-- Transactions -->
+        <section id="transaction" class="mt-8 px-8">
+            <div class="flex justify-between items-center">
+                <h2 class="text-[16px] font-bold">Transactions</h2>
+                <span class="text-[12px]">View All</span>
+            </div>
+            <!-- History -->
+            <div class="grid grid-cols-1 gap-1">
+                <div
+                class="flex items-center justify-between px-4 py-3 bg-white mt-3 rounded-md border border-gray-300 shadow-md">
+
+                <div class="flex gap-3 items-center">
+                    <div class="bg-gray-200 p-2 rounded-full">
+                        <img src="./media/wallet.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[14px]">Electricity Bill</h4>
+                        <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v text-gray-400"></i>
+            </div>
+            <div
+                class="flex items-center justify-between px-4 py-3 bg-white mt-3 rounded-md border border-gray-300 shadow-md">
+
+                <div class="flex gap-3 items-center">
+                    <div class="bg-gray-200 p-2 rounded-full">
+                        <img src="./media/wallet.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[14px]">Electricity Bill</h4>
+                        <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v text-gray-400"></i>
+            </div>
+            <div
+                class="flex items-center justify-between px-4 py-3 bg-white mt-3 rounded-md border border-gray-300 shadow-md">
+
+                <div class="flex gap-3 items-center">
+                    <div class="bg-gray-200 p-2 rounded-full">
+                        <img src="./media/wallet.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[14px]">Electricity Bill</h4>
+                        <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v text-gray-400"></i>
+            </div>
+            <div
+                class="flex items-center justify-between px-4 py-3 bg-white mt-3 rounded-md border border-gray-300 shadow-md">
+
+                <div class="flex gap-3 items-center">
+                    <div class="bg-gray-200 p-2 rounded-full">
+                        <img src="./media/wallet.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[14px]">Electricity Bill</h4>
+                        <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v text-gray-400"></i>
+            </div>
             </div>
         </section>
         <!-- Add Money Section -->
@@ -77,15 +150,17 @@
                 </select>
                 <fieldset class="fieldset">
                     <label class="fieldset-label text-[15px] font-semibold text-black">Account Number</label>
-                    <input id="mobile-number" type="number" value="01558833814" class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
+                    <input id="mobile-number" type="number" value="01558833814"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
                         placeholder="Enter your mobile number" />
                     <label class="fieldset-label text-[15px] font-semibold text-black">Amount to Add</label>
                     <input id="add-amount" type="number" class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
                         placeholder="Add amount to add" />
                     <label class="fieldset-label text-[15px] font-semibold text-black">PIN Number</label>
-                    <input id="pin" type="number" value="1234" class="rounded-2xl bg-gray-200 input w-full focus:outline-none "
-                        placeholder="Enter your PIN" />
-                    <button id="addmoney-btn" class="btn bg-sky-600 text-white text-[1.15rem] rounded-3xl mt-4">Add Money</button>
+                    <input id="pin" type="number" value="1234"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none " placeholder="Enter your PIN" />
+                    <button id="addmoney-btn" class="btn bg-sky-600 text-white text-[1.15rem] rounded-3xl mt-4">Add
+                        Money</button>
                 </fieldset>
             </div>
         </section>
@@ -95,25 +170,29 @@
             <div class="card-body bg-white mt-3 rounded-[30px]">
                 <fieldset class="fieldset">
                     <label class="fieldset-label text-[15px] font-semibold text-black">Agent Number</label>
-                    <input id="mobile-number" type="number" value="01558833814" class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
+                    <input id="mobile-number" type="number" value="01558833814"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
                         placeholder="Enter your mobile number" />
                     <label class="fieldset-label text-[15px] font-semibold text-black">Amount to Cashout</label>
-                    <input id="cashout-amount" type="number" class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
+                    <input id="cashout-amount" type="number"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
                         placeholder="Type your cashout amount" />
                     <label class="fieldset-label text-[15px] font-semibold text-black">PIN Number</label>
-                    <input id="cashout-pin" type="number" value="1234" class="rounded-2xl bg-gray-200 input w-full focus:outline-none "
-                        placeholder="Enter your PIN" />
-                    <button id="cashout-btn" class="btn bg-sky-600 text-white text-[1.15rem] rounded-3xl mt-4">Withdraw Money</button>
+                    <input id="cashout-pin" type="number" value="1234"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none " placeholder="Enter your PIN" />
+                    <button id="cashout-btn" class="btn bg-sky-600 text-white text-[1.15rem] rounded-3xl mt-4">Withdraw
+                        Money</button>
                 </fieldset>
             </div>
         </section>
-        
+
 
     </div>
     <script src="./scripts/login.js"></script>
     <script src="./scripts/addmoney.js"></script>
     <script src="./scripts/logout.js"></script>
     <script src="./scripts/cashout.js"></script>
+    <script src="./scripts/transaction.js"></script>
 </body>
 
 </html>

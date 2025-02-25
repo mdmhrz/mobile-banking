@@ -3,6 +3,8 @@ document.getElementById('cashout-box').addEventListener('click', function () {
     displayStatus('cashout-section', 'block')
     displayStatus('transaction', 'none')
     displayStatus('transfer-section', 'none')
+    displayStatus('paybill-section', 'none')
+    displayStatus('bonus-section', 'none')
 })
 
 document.getElementById('cashout-btn').addEventListener('click', function () {

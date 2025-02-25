@@ -3,6 +3,7 @@ document.getElementById('transaction-box').addEventListener('click', function ()
     displayStatus('cashout-section', 'none')
     displayStatus('transaction', 'block')
     displayStatus('transfer-section', 'none')
+    displayStatus('paybill-section', 'none')
 })
 
 

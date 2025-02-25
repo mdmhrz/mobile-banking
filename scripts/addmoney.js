@@ -3,6 +3,8 @@ document.getElementById('add-money-box').addEventListener('click', function () {
     displayStatus('cashout-section', 'none')
     displayStatus('transaction', 'none')
     displayStatus('transfer-section', 'none')
+    displayStatus('paybill-section', 'none')
+    displayStatus('bonus-section', 'none')
 
 })
 document.getElementById('addmoney-btn').addEventListener('click', function (event) {

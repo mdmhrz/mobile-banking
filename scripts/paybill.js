@@ -1,25 +1,26 @@
-document.getElementById('transfer-box').addEventListener('click', function () {
+document.getElementById('paybill-box').addEventListener('click', function () {
     displayStatus('add-money-section', 'none')
     displayStatus('cashout-section', 'none')
     displayStatus('transaction', 'none')
-    displayStatus('transfer-section', 'block')
-    displayStatus('paybill-section', 'none')
+    displayStatus('transfer-section', 'none')
+    displayStatus('paybill-section', 'block')
     displayStatus('bonus-section', 'none')
-})
 
-document.getElementById('transfer-btn').addEventListener('click', function () {
+})
+document.getElementById('paynow-btn').addEventListener('click', function (event) {
+    event.preventDefault();
     const mainBalance = getInnerTextByID('main-balance');
-    const pin = getInputValueByID('cashout-pin');
-    const transferAmount = getInputValueByID('transfer-amount');
-    const transferNumber = document.getElementById('transfer-number').value;
+    const pin = getInputValueByID('pin');
+    const payAmount = getInputValueByID('pay-amount');
+    const bankName = document.getElementById('bank-name').value;
+    const billerNumber = document.getElementById('biller-number').value;
     const historyContainer = document.getElementById('all-history');
 
-
-    if (transferNumber.length === 11) {
+    if (billerNumber.length === 11) {
         if (pin === 1234) {
-            if (transferAmount > 0) {
-                if (transferAmount < mainBalance) {
-                    const updatedAmount = mainBalance - transferAmount;
+            if (payAmount > 0) {
+                if (payAmount < mainBalance) {
+                    const updatedAmount = mainBalance - payAmount;
                     setInnerText('main-balance', updatedAmount)
 
                     // Update History to Transactiom Section
@@ -31,7 +32,7 @@ document.getElementById('transfer-btn').addEventListener('click', function () {
                                     <img src="./media/wallet.png" alt="">
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-[12px]">Transfered $${transferAmount} to ${transferNumber} number</h4>
+                                    <h4 class="font-bold text-[12px]">Pay Bill $${payAmount} to ${billerNumber} number through ${bankName}</h4>
                                     <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
                                 </div>
                             </div>
@@ -55,6 +56,5 @@ document.getElementById('transfer-btn').addEventListener('click', function () {
     else {
         alert('Please enter a valid mobile number')
     }
-
 
 })

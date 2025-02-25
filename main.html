@@ -55,12 +55,12 @@
                 <img src="./media/money.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Transfer Money</h3>
             </div>
-            <div
+            <div id="get-bonus"
                 class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
                 <img src="./media/bonus.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Get Bonus</h3>
             </div>
-            <div
+            <div id="paybill-box"
                 class="cursor-pointer flex flex-col border border-gray-200 shadow-lg rounded-md px-3- py-3 text-center">
                 <img src="./media/purse.png" alt="" class="w-4/12 mx-auto">
                 <h3 class="mt-2 font-medium text-gray-600 text-[12px]">Pay Bill</h3>
@@ -120,6 +120,8 @@
                 </fieldset>
             </div>
         </section>
+
+
         <!-- Transfer Money Section -->
         <section id="transfer-section" class="mt-8 px-8 hidden">
             <h2 class="text-[16px] font-bold">Transfer Money</h2>
@@ -142,6 +144,48 @@
             </div>
         </section>
 
+        <!-- Paybill Section -->
+        <section id="paybill-section" class="mt-8 px-8 hidden">
+            <h2 class="text-[16px] font-bold">Pay Bill</h2>
+            <div class="card-body bg-white mt-3 rounded-[30px]">
+                <legend class="text-[16px] font-semibold text-black">Select a Bank</legend>
+                <select title="selectAnyBank" id="bank-name" class="select select-ghost input bg-gray-200 rounded-2xl">
+                    <option disabled selected>Select Bank</option>
+                    <option value="Bkash">Bkash</option>
+                    <option value="Rocket">Rocket</option>
+                    <option value="Nagad">Nagad</option>
+                </select>
+                <fieldset class="fieldset">
+                    <label class="fieldset-label text-[15px] font-semibold text-black">Biller Account Number</label>
+                    <input id="biller-number" type="number" value="01558833814"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
+                        placeholder="Enter biller account number" />
+                    <label class="fieldset-label text-[15px] font-semibold text-black">Amount to Pay</label>
+                    <input id="pay-amount" type="number" class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
+                        placeholder="Add amount to pay" />
+                    <label class="fieldset-label text-[15px] font-semibold text-black">PIN Number</label>
+                    <input id="pin" type="number" value="1234"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none " placeholder="Enter your PIN" />
+                    <button id="paynow-btn" class="btn bg-sky-600 text-white text-[1.15rem] rounded-3xl mt-4">Pay
+                        Now</button>
+                </fieldset>
+            </div>
+        </section>
+        <!-- Get Bonus Section -->
+        <section id="bonus-section" class="mt-8 px-8">
+            <h2 class="text-[16px] font-bold">Get Bonus</h2>
+            <div class="card-body bg-white mt-3 rounded-[30px]">
+                <fieldset class="fieldset">
+                    <label class="fieldset-label text-[15px] font-semibold text-black">Enter Bonus Cupon</label>
+                    <input id="cupon-amount" type="number"
+                        class="rounded-2xl bg-gray-200 input w-full focus:outline-none"
+                        placeholder="Enter your cupon number" />
+                    <button id="get-btn" class="btn bg-sky-600 text-white text-[1.15rem] rounded-3xl mt-4">Get
+                        Bonus</button>
+                </fieldset>
+            </div>
+        </section>
+
         <!-- Transactions -->
         <section id="transaction" class="mt-8 px-8 hidden">
             <div class="flex justify-between items-center">
@@ -153,6 +197,8 @@
             </div>
         </section>
     </div>
+    <script src="./scripts/bonus.js"></script>
+    <script src="./scripts/paybill.js"></script>
     <script src="./scripts/transfer-money.js"></script>
     <script src="./scripts/utilities/utilities.js"></script>
     <script src="./scripts/login.js"></script>

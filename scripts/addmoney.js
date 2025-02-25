@@ -1,5 +1,10 @@
+document.getElementById('add-money-box').addEventListener('click',function(){
+    document.getElementById('add-money-section').style.display = 'block';
+    document.getElementById('cashout-section').style.display = 'none';
+})
 document.getElementById('addmoney-btn').addEventListener('click', function (event) {
     event.preventDefault();
+
     const balance = document.getElementById('main-balance').innerText;
     const mainBalance = parseFloat(balance);
     const pin = document.getElementById('pin').value;

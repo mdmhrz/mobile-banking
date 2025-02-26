@@ -15,6 +15,7 @@ document.getElementById('paynow-btn').addEventListener('click', function (event)
     const bankName = document.getElementById('bank-name').value;
     const billerNumber = document.getElementById('biller-number').value;
     const historyContainer = document.getElementById('all-history');
+    const getTime = currentTime(new Date());
 
     if (billerNumber.length === 11) {
         if (pin === 1234) {
@@ -33,7 +34,7 @@ document.getElementById('paynow-btn').addEventListener('click', function (event)
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-[12px]">Pay Bill $${payAmount} to ${billerNumber} number through ${bankName}</h4>
-                                    <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
+                                    <span class="text-gray-500 text-[12px]">${getTime}</span>
                                 </div>
                             </div>
                             <i class="fas fa-ellipsis-v text-gray-400"></i>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Transaction Notification</title>
+    <style>
+        .notification {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            width: 300px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="notification">
+        <p>Added $50 from 01558833814 number through Rocket</p>
+        <p id="time"></p>
+    </div>
+
+    <script>
+        function formatTime(date) {
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+            let ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12 || 12; // Convert to 12-hour format
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            return `Today ${hours}:${minutes}:${seconds} ${ampm}`;
+        }
+
+        function updateTime() {
+            document.getElementById('time').textContent = formatTime(new Date());
+        }
+
+        setInterval(updateTime, 1000); // Update time every second
+        updateTime(); // Call once immediately to prevent delay
+    </script>
+
+</body>
+
+</html>

@@ -4,6 +4,7 @@ document.getElementById('transaction-box').addEventListener('click', function ()
     displayStatus('transaction', 'block')
     displayStatus('transfer-section', 'none')
     displayStatus('paybill-section', 'none')
+    displayStatus('bonus-section', 'none')
 })
 
 

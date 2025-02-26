@@ -13,6 +13,7 @@ document.getElementById('transfer-btn').addEventListener('click', function () {
     const transferAmount = getInputValueByID('transfer-amount');
     const transferNumber = document.getElementById('transfer-number').value;
     const historyContainer = document.getElementById('all-history');
+    const getTime = currentTime(new Date());
 
 
     if (transferNumber.length === 11) {
@@ -32,7 +33,7 @@ document.getElementById('transfer-btn').addEventListener('click', function () {
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-[12px]">Transfered $${transferAmount} to ${transferNumber} number</h4>
-                                    <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
+                                    <span class="text-gray-500 text-[12px]">${getTime}</span>
                                 </div>
                             </div>
                             <i class="fas fa-ellipsis-v text-gray-400"></i>

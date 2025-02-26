@@ -12,6 +12,7 @@ document.getElementById('get-btn').addEventListener('click', function (event) {
     const mainBalance = getInnerTextByID('main-balance');
     const cuponAmount = getInputValueByID('cupon-amount');
     const historyContainer = document.getElementById('all-history');
+    const getTime = currentTime(new Date());
 
     if (cuponAmount > 0) {
         const value = mainBalance + cuponAmount;
@@ -26,17 +27,20 @@ document.getElementById('get-btn').addEventListener('click', function (event) {
                         <img src="./media/wallet.png" alt="">
                     </div>
                     <div>
-                        <h4 class="font-bold text-[12px]">Added $${cuponAmount} through Applying Cupon</h4>
-                        <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
+                        <h4 class="font-bold text-[12px]">Added $${cuponAmount} through using Cupon Bonus</h4>
+                        <span id="time" class="text-gray-500 text-[12px]">${getTime}</span>
                     </div>
                 </div>
                 <i class="fas fa-ellipsis-v text-gray-400"></i>
             </div>
         `
+
         historyContainer.appendChild(newHistory)
+
     }
     else {
         alert('Plese enter an amount to add.')
     }
 })
+
 

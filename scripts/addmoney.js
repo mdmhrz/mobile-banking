@@ -22,9 +22,9 @@ document.getElementById('addmoney-btn').addEventListener('click', function (even
 
     if (pin === 1234) {
         if (addAmount > 0) {
-            // document.getElementById('main-balance').innerText = mainBalance + addAmount;
             const value = mainBalance + addAmount;
             setInnerText('main-balance', value);
+            const getTime = currentTime(new Date());
 
             // Update History to Transactiom Section
             const newHistory = document.createElement('div');
@@ -36,7 +36,7 @@ document.getElementById('addmoney-btn').addEventListener('click', function (even
                         </div>
                         <div>
                             <h4 class="font-bold text-[12px]">Added $${addAmount} from ${addmoneyNumber} number through ${bankName}</h4>
-                            <span class="text-gray-500 text-[12px]">Today 01:44 AM</span>
+                            <span class="text-gray-500 text-[12px]">${getTime}</span>
                         </div>
                     </div>
                     <i class="fas fa-ellipsis-v text-gray-400"></i>
